@@ -1,11 +1,137 @@
 @charset "UTF-8";
+:root{
+    --cor0:#BFA77B;
+    --cor1:#97836A;
+    --cor2:#b9574c;
+    --cor3:#32a83894;
+    --cor4:#463426;
 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    background-color: white;   
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
+    
+    
+}
 header > img{
     border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 header > h1{
+    color: var(--cor3);
     position: absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%,-430%);
 }
+nav{
+    background-color: var(--cor0);
+    padding: 10px;
+}
+nav a{
+    color:var(--cor2);
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration:0.5s;
+}
+nav a:hover{
+    background-color:var(--cor1);
+    color:var(--cor2);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    height: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+div.container{
+    width: 950px;
+    height: 400px;
+    
+    margin:10px;
+    background-color: white;    
+    background-image: url('imagem/gala.png');
+    background-size: 100% 100%;
+    position:absolute;  
+    background-repeat: no-repeat;
+}
+div.conteudo{
+    padding-top: 160px;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+div.quadrado{
+    margin-top: 420px;
+    margin-left: 10px;
+    display:inline-block;
+    border: 2px solid var(--cor2);
+    width: 324px;
+    height: 355px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+span.promocao > h4{
+    color: black;
+    margin: 30px;
+    padding:0px;
+    border:0px;
+    vertical-align: baseline;
+    letter-spacing:normal;
+    font-size: 46px;
+    line-height: 1.1em;
+    text-align: center;
+}
+span#vermelho > p{
+    color:var(--cor2);
+    margin: 30px;
+    padding:0px;
+    border:0px;
+    vertical-align: baseline;
+    letter-spacing:normal;
+    font-size: 46px;
+    line-height: 1.1em;
+    text-align: center;
+}
+span#paragrafo > p{
+    margin: 30px;
+    padding:0px;
+    border:0px;
+    vertical-align: baseline;
+    letter-spacing:normal;
+    font-size: 30px;
+    line-height: 1.1em;
+    text-align: center;
+}
+span#informacao{
+    margin: 0px;
+    padding:0px;
+    border:0px;
+    vertical-align: baseline;
+    letter-spacing:normal;
+    font-size: 15px;
+    line-height: 0.5em;
+    text-align: center;
+}
+
