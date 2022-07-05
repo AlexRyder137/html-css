@@ -18,7 +18,7 @@
     margin: 0px;
     padding: 0px;
 }
-body{
+ html, body{
     min-height: 100vh;
     background-color: var(--cor2);
     
@@ -62,44 +62,63 @@ section{
     display: inline-block;
 }
 section.normal{
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: white;
     color: black;
     font-family: var(--fontnor);
 
 }
-section.imagem_texto{
-    width: 400px;
+
+section.imagem{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
     font-family: var(--fonteIm);
 
 }
-
-section.imagem{
-    width: 400px;
-    padding-bottom: 10%;
-    line-height: 2em;
-    padding-left: 60px;
-    background-color: white;
-}
 section#david{
     
     background-image: url('imagem/professores/david.png');
     background-size: 100% 100%;
-   
-    background-position: right center ;
-    background-repeat: no-repeat;
-    
+    background-position: center center;  
 }
-section#ruben{
-    background-image: url('imagem/professores/ruben.png');
-}
-
-footer{
-    background-color: black;
+div.imagem#david{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.541);
     color: white;
 }
-footer > div{
-    text-orientation: center ;
-   
+
+
+footer{
+
+    background-color: black;
+    color: white;
+
+    
 }
+footer > div{
+    margin: auto;
+    top: 15%;
+    left: 15%;
+    
+    display: inline-block; 
+    
+}
+section.footer{
+    padding-top:0% ;
+    padding-bottom: 0%;
+    margin: auto;
+}
+img{
+    padding-top: 10px;
+}
+
